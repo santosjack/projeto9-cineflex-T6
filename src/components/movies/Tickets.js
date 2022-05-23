@@ -40,7 +40,7 @@ export default function Tickets () {
                         {name}
                     </div>
                 ) : (
-                    <div className={`ticket ${selected ? status.selected : status.available}`} onClick={() => {setSelected(!selected); selectTicket(id)}}>
+                    <div value={selected ? status.selected : status.available} className={`ticket ${selected ? status.selected : status.available}`} onClick={() => {setSelected(!selected)}} onPointerOverCapture={() => {selected ? selectTicket(id): console.log(".")}}>
                         {name}
                     </div>
                 )}
@@ -49,13 +49,13 @@ export default function Tickets () {
         )
     }
 
-    function selectTicket (id, setSelected){
+    function selectTicket (id){
 
         let items = itemsSelected;
 
         items.map(item => {
             if(item === id){
-                items.pop(item);
+                items.pop(id);
             }else{
                 items.push(id);
             }
