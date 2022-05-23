@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: #ffffff;
+    color: black;
+}
+
+.hidden{
+    display: none;
+}
+
+.header{
+    width: 100%;
+    height: 10%;
+    background-color: #c3cfd9;
+    color: #e8833a;
+    text-align: center;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerTitulo{
+    width: 100%;
+    margin: 35px auto;
+    text-align: center;
+}
+
+.containerList{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.movie{
+    margin: 5px 5px;
+}
+
+.movie img{
+    width: 129px;
+    height: 193px;
+}
+
+.containerSession{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerSession .session{
+    width: 90%;
+    height: 20%;
+    margin-bottom: 10px;
+    background-color: aliceblue;
+}
+
+
+.containerSession .session .time {
+    display: flex;
+}
+
+
+.containerSession .session .time .buttom{
+    width: 82px;
+    height: 43px;
+    text-align: center;
+    padding: 5% 0;
+    background-color: #e8833a;
+    color: #ffffff;
+    margin-right: 8px;
+}
+
+.containerTickets {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.containerTickets .ticket{
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    margin: 5px 5px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.ticket.available{
+    background-color: #c3cfd9;
+    border: 1px solid #808f9d;
+}
+
+.ticket.unavailable{
+    background-color: #fbe192;
+    border: 1px solid #f7c52b;
+    cursor: not-allowed;
+}
+
+.ticket.selected{
+    background-color: #8dd7cf;
+    border: 1px solid #45bdb0;
+}
+
+.footer{
+    display: flex;
+    width: 100%;
+    height: 30%;
+    background-color: #9eadba;
+    padding: 2%;
+}
+
+.footer img{
+    width: 48px;
+    height: 72px;
+}
+
+.footer .text{
+
+    margin-left: 15px;
+    width: 60%;
+    color: #293845;
+}
